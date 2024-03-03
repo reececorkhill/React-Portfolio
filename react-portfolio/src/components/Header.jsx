@@ -1,51 +1,57 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Header = (props) => {
     return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
-            <a className="navbar-brand" href="#">Reece Corkhill | Portfolio</a>
+            <a className="navbar-brand" href="/">Reece Corkhill | Portfolio</a>
             <div className="collapse navbar-collapse p-3" id="navbarNav">
                 <ul className="navbar-nav">
                     <li className="nav-item">
-                    <a
-                    href="#home"
-                    onClick={() => props.handlePageChange('Home')}
-                    className={
-                        props.currentPage === 'Home' ? 'nav-link active' : 'nav-link'
-                    }>Home</a>
+                        <NavLink
+                            to="/"
+                            end
+                            className={({ isActive }) =>
+                                isActive ? 'nav-link active' : 'nav-link'
+                            }
+                        >Home</NavLink>
                     </li>
                     <li className="nav-item">
-                    <a
-                    href="#about"
-                    onClick={() => props.handlePageChange('About')}
-                    className={
-                        props.currentPage === 'About' ? 'nav-link active' : 'nav-link'
-                    }>About</a>
+                        <NavLink
+                            to="/About"
+                            end
+                            className={({ isActive }) =>
+                                isActive ? 'nav-link active' : 'nav-link'
+                            }
+                        >About</NavLink>
                     </li>
                     <li className="nav-item">
-                    <a
-                    href="#projects"
-                    onClick={() => props.handlePageChange('Projects')}
-                    className={
-                        props.currentPage === 'Projects' ? 'nav-link active' : 'nav-link'
-                    }>Projects</a>
+                        <NavLink
+                            to="/Projects"
+                            end
+                            className={({ isActive }) =>
+                                isActive ? 'nav-link active' : 'nav-link'
+                            }
+                        >Projects</NavLink>
                     </li>
                     <li className="nav-item">
-                    <a
-                    href="#resume"
-                    onClick={() => props.handlePageChange('Resume')}
-                    className={
-                        props.currentPage === 'Resume' ? 'nav-link active' : 'nav-link'
-                    }>Resume</a>
+                        <NavLink
+                            to="/Resume"
+                            end
+                            className={({ isActive }) =>
+                                isActive ? 'nav-link active' : 'nav-link'
+                            }
+                        >Resume</NavLink>
                     </li>
                     <li className="nav-item">
-                    <a
-                    href="#contact"
-                    onClick={() => props.handlePageChange('Contact')}
-                    className={
-                        props.currentPage === 'Contact' ? 'nav-link active' : 'nav-link'
-                    }>Contact</a>
+                        <NavLink
+                            to="/Contact"
+                            end
+                            className={({ isActive }) =>
+                                isActive ? 'nav-link active' : 'nav-link'
+                            }
+                        >Contact</NavLink>
                     </li>
                 </ul>
             </div>
