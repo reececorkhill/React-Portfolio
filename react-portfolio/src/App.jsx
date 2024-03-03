@@ -1,50 +1,23 @@
-import { useState } from 'react'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header.jsx'
 import Home from './components/Home.jsx'
 import About from './components/About.jsx'
 import Project from './components/Project.jsx'
+import Resume from './components/Resume.jsx'
 import Contact from './components/Contact.jsx'
 
 function App() {
-  const [currentPage, setCurrentPage] = useState('Home');
-
-  const handlePageChange = (page) => {
-    setCurrentPage(page);
-  };
-
-  const renderPage = () => {
-    if (currentPage === 'Home') {
-      return (
-        <div>
-          <Home />
-        </div>
-      );
-    } else if (currentPage === 'About') {
-      return (
-        <div>
-          <About />
-        </div>
-      );
-    } else if (currentPage === 'Projects') {
-      return (
-        <div>
-          <Project />
-        </div>
-      );
-    } else {
-      return (
-        <div>
-          <Contact />
-        </div>
-      );
-    }
-  };
-
   return (
-    <div>
-      <Header currentPage={currentPage} handlePageChange={handlePageChange} />
-      {renderPage()}
-    </div>
+    <Router>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/About" element={<About />} />
+        <Route path="/Projects" element={<Project />} />
+        <Route path="/Resume" element={<Resume />} />
+        <Route path="/Contact" element={<Contact />} />
+      </Routes>
+    </Router>
   );
 }
 
