@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Header = () => {
+const Header = (props) => {
     return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
@@ -8,19 +8,44 @@ const Header = () => {
             <div className="collapse navbar-collapse p-3" id="navbarNav">
                 <ul className="navbar-nav">
                     <li className="nav-item">
-                        <a className="nav-link" href="#">Home</a>
+                    <a
+                    href="#home"
+                    onClick={() => props.handlePageChange('Home')}
+                    className={
+                        props.currentPage === 'Home' ? 'nav-link active' : 'nav-link'
+                    }>Home</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#">About Me</a>
+                    <a
+                    href="#about"
+                    onClick={() => props.handlePageChange('About')}
+                    className={
+                        props.currentPage === 'About' ? 'nav-link active' : 'nav-link'
+                    }>About</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#">Projects</a>
+                    <a
+                    href="#projects"
+                    onClick={() => props.handlePageChange('Projects')}
+                    className={
+                        props.currentPage === 'Projects' ? 'nav-link active' : 'nav-link'
+                    }>Projects</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#">Resume</a>
+                    <a
+                    href="#resume"
+                    onClick={() => props.handlePageChange('Resume')}
+                    className={
+                        props.currentPage === 'Resume' ? 'nav-link active' : 'nav-link'
+                    }>Resume</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#">Contact</a>
+                    <a
+                    href="#contact"
+                    onClick={() => props.handlePageChange('Contact')}
+                    className={
+                        props.currentPage === 'Contact' ? 'nav-link active' : 'nav-link'
+                    }>Contact</a>
                     </li>
                 </ul>
             </div>
