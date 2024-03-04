@@ -12,7 +12,7 @@
         "imgsource": "",
         "imgalt": "Example Image Alt 2",
         "h5": "Project Example 2",
-        "p1": "This is an example paragraph for Prohect 2.",
+        "p1": "This is an example paragraph for Project 2.",
         "tag": "WordPress"
     },
     {
@@ -20,7 +20,7 @@
         "imgsource": "",
         "imgalt": "Example Image Alt 3",
         "h5": "Project Example 3",
-        "p1": "This is an example paragraph for Prohect 3.",
+        "p1": "This is an example paragraph for Project 3.",
         "tag": "WordPress"
     },
     {
@@ -28,7 +28,23 @@
         "imgsource": "",
         "imgalt": "Example Image Alt 4",
         "h5": "Project Example 4",
-        "p1": "This is an example paragraph for Prohect 4.",
+        "p1": "This is an example paragraph for Project 4.",
+        "tag": "WordPress"
+    },
+    {
+        "id": 5,
+        "imgsource": "",
+        "imgalt": "Example Image Alt 5",
+        "h5": "Project Example 5",
+        "p1": "This is an example paragraph for Project 5.",
+        "tag": "WordPress"
+    },
+    {
+        "id": 6,
+        "imgsource": "",
+        "imgalt": "Example Image Alt 6",
+        "h5": "Project Example 6",
+        "p1": "This is an example paragraph for Project 6.",
         "tag": "WordPress"
     }
 ]
