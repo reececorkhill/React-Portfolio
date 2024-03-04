@@ -7,6 +7,7 @@ import Project from './components/Project.jsx'
 import Resume from './components/Resume.jsx'
 import Contact from './components/Contact.jsx'
 import homeData from '../data/home.json'
+import aboutData from '../data/about.json'
 
 function App() {
   return (
@@ -21,9 +22,19 @@ function App() {
           h1={data.h1}
           h2={data.h2}
           p={data.p}
-          />} key={"Homepage"} />
+          />} key={"Home"} />
         ))}
-        <Route path="/About" element={<About />} />
+        {aboutData.map((data) => (
+          <Route path="/About" element={<About 
+          id={data.id}
+          imgsource={data.imgsource}
+          imgalt={data.imgalt}
+          h1={data.h1}
+          p1={data.p1}
+          p2={data.p2}
+          p3={data.p3}
+          />} key={"About"} />
+        ))}
         <Route path="/Projects" element={<ProjectGallery />} />
         <Route path="/Resume" element={<Resume />} />
         <Route path="/Contact" element={<Contact />} />
