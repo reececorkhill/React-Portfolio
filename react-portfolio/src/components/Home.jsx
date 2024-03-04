@@ -1,15 +1,14 @@
 import React from 'react';
 
-const Home = () => {
+const Home = (props) => {
     return (
     <div className="row jumbotron-row">
         <div className="jumbotron">
-            <img src="" className="rounded" alt="Reece Corkhill" id="jumbotron-image"/>
-            <h1 className="display-4 pt-4 pb-2">Reece Corkhill</h1>
-            <h2 className="display-7 pt-4 pb-2">Front-end Web Developer</h2>
+            <img src={props.imgsource} className="rounded" alt={props.imgalt} id="jumbotron-image"/>
+            <h1 className="display-4 pt-4 pb-2">{props.h1}</h1>
+            <h2 className="display-7 pt-4 pb-2">{props.h2}</h2>
             <p className="lead">
-                I'm a Front-end Web Developer and this is my portfolio where you can find out more about me,
-                my projects, skills and how to contact me.
+                {props.p}
             </p>
             <a className="btn btn-primary btn-lg" href="#contact-me" role="button">Contact Me</a>
         </div>
