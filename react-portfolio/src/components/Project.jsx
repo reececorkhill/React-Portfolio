@@ -1,5 +1,11 @@
 import React from 'react';
 
+const Button = (props) => {
+    return (
+        <button id={props.id}>View Project</button>
+    )
+}
+
 const Project = (props) => {
     return (
     <div className="col-sm-12 col-md-12 col-lg-12 col-xl-12">
@@ -8,7 +14,7 @@ const Project = (props) => {
             <div className="card-body">
                 <h5 className="card-title">{props.h5}</h5>
                 <p className="card-text">{props.p1}</p>
-                <button id={props.id}>View Project</button>
+                <Button id={props.id}/>
                 <p className="card-text"><small className="text-muted">{props.tag}</small></p>
             </div>
         </div>
