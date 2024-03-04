@@ -5,7 +5,6 @@ const Header = (props) => {
     return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
-            <a className="navbar-brand" href="/">Reece Corkhill | Portfolio</a>
             <div className="collapse navbar-collapse p-3" id="navbarNav">
                 <ul className="navbar-nav">
                     <li className="nav-item">
