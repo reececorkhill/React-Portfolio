@@ -3,7 +3,6 @@ import Header from './components/Header.jsx'
 import Home from './components/Home.jsx'
 import About from './components/About.jsx'
 import ProjectGallery from './components/ProjectGallery.jsx';
-import Project from './components/Project.jsx'
 import Resume from './components/Resume.jsx'
 import Contact from './components/Contact.jsx'
 import homeData from '../data/home.json'
@@ -35,7 +34,7 @@ function App() {
           p3={data.p3}
           />} key={"About"} />
         ))}
-        <Route path="/Projects" element={<ProjectGallery />} />
+        <Route path="/Projects" element={<ProjectGallery />} key={"Projects"}/>
         <Route path="/Resume" element={<Resume />} />
         <Route path="/Contact" element={<Contact />} />
       </Routes>
