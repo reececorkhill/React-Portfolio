@@ -8,6 +8,7 @@ const ProjectGallery = () => {
         {projectData.map((data) => (
             <Project
                 key={data.id}
+                id={data.id}
                 imgsource={data.imgsource}
                 imgalt={data.imgalt}
                 h5={data.h5}
