@@ -2,17 +2,17 @@ import React from 'react';
 import projectData from '../../data/projects.json';
 
 const handleClick = () => {
+    const buttons = document.querySelectorAll('button')
 
-    const buttonClicked = () => {
-        for (let i = 0; i < projectData.length; i++) {
-            alert(projectData[i].id)
+    buttons.forEach(function (button) {
+        console.log(button)
+        console.log(button.id)
+        if (button.id === "button-1") {
+            console.log("This one matches!")
+        } else {
+            console.log("Not this one!")
         }
-    }
-
-    projectData.forEach(function (arrayItem) {
-        var id = arrayItem.id;
-        
-    });
+    })
 }
 
 const Button = (props) => {
