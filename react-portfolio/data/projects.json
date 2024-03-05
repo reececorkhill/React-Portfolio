@@ -2,10 +2,11 @@
     {
         "id": 1,
         "imgsource": "",
-        "imgalt": "Screenshot of the NJ Coaching Website",
-        "h5": "NJ Coaching Website",
-        "p1": "A client website built using WordPress and Elementor. Fully responsive design that includes Image Galleries, a Contact Form, Google Analytics and a Google Maps Integration.",
-        "tag": "WordPress"
+        "imgalt": "Example Image Alt 1",
+        "h5": "Project Example 1",
+        "p1": "This is an example paragraph for Project 1.",
+        "tag": "WordPress",
+        "slug": "/Projects/"
     },
     {
         "id": 2,
@@ -13,7 +14,8 @@
         "imgalt": "Example Image Alt 2",
         "h5": "Project Example 2",
         "p1": "This is an example paragraph for Project 2.",
-        "tag": "WordPress"
+        "tag": "WordPress",
+        "slug": "/Projects/"
     },
     {
         "id": 3,
@@ -21,7 +23,8 @@
         "imgalt": "Example Image Alt 3",
         "h5": "Project Example 3",
         "p1": "This is an example paragraph for Project 3.",
-        "tag": "WordPress"
+        "tag": "WordPress",
+        "slug": "/Projects/"
     },
     {
         "id": 4,
@@ -29,7 +32,8 @@
         "imgalt": "Example Image Alt 4",
         "h5": "Project Example 4",
         "p1": "This is an example paragraph for Project 4.",
-        "tag": "WordPress"
+        "tag": "WordPress",
+        "slug": "/Projects/"
     },
     {
         "id": 5,
@@ -37,14 +41,16 @@
         "imgalt": "Example Image Alt 5",
         "h5": "Project Example 5",
         "p1": "This is an example paragraph for Project 5.",
-        "tag": "WordPress"
+        "tag": "WordPress",
+        "slug": "/Projects/"
     },
     {
         "id": 6,
         "imgsource": "",
-        "imgalt": "Example Image Alt 6",
-        "h5": "Project Example 6",
-        "p1": "This is an example paragraph for Project 6.",
-        "tag": "WordPress"
+        "imgalt": "Screenshot of the NJ Coaching Website",
+        "h5": "NJ Coaching Website",
+        "p1": "A client website built using WordPress and Elementor. Fully responsive design that includes Image Galleries, a Contact Form, Google Analytics and a Google Maps Integration.",
+        "tag": "WordPress",
+        "slug": "/Projects/NJ-Coaching"
     }
 ]

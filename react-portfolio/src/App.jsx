@@ -5,8 +5,10 @@ import About from './components/About.jsx'
 import ProjectGallery from './components/ProjectGallery.jsx';
 import Resume from './components/Resume.jsx'
 import Contact from './components/Contact.jsx'
+import projectData from '../data/projects.json'
 import homeData from '../data/home.json'
 import aboutData from '../data/about.json'
+import NJCoaching from './components/Projects/NJCoaching.jsx';
 
 function App() {
   return (
@@ -35,6 +37,17 @@ function App() {
           />} key={"About"} />
         ))}
         <Route path="/Projects" element={<ProjectGallery />} key={"Projects"}/>
+        {projectData.map((data) => (
+          <Route path="/Projects/NJ-Coaching" element={<NJCoaching 
+          id={data.id}
+          imgsource={data.imgsource}
+          imgalt={data.imgalt}
+          h1={data.h1}
+          p1={data.p1}
+          p2={data.p2}
+          p3={data.p3}
+          />} key={"NJ-Coaching"} />
+        ))}
         <Route path="/Resume" element={<Resume />} />
         <Route path="/Contact" element={<Contact />} />
       </Routes>
