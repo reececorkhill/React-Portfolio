@@ -14,6 +14,7 @@ const ProjectGallery = () => {
                 h5={data.h5}
                 p1={data.p1}
                 tag={data.tag}
+                slug={data.slug}
             />
         ))}
     </div>

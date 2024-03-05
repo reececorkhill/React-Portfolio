@@ -29,7 +29,9 @@ const Project = (props) => {
             <div className="card-body">
                 <h5 className="card-title">{props.h5}</h5>
                 <p className="card-text">{props.p1}</p>
-                <Button id={"button-" + props.id}/>
+                <a href={props.slug}>
+                    <Button id={"button-" + props.id}/>
+                </a>
                 <p className="card-text"><small className="text-muted">{props.tag}</small></p>
             </div>
         </div>
