@@ -1,10 +1,10 @@
 import React from 'react';
 
-const NJCoaching = (props) => {
+const MovieGuessingGame = (props) => {
     return (
     <div className="col-sm-12 col-md-12 col-lg-12 col-xl-12">
         <div className="card mb-3" id="work-card">
-            <a href=""><img src="" className="card-img-top" alt={props.imgalt}/></a>
+            <a href=""><img src={props.imgsource} className="card-img-top" alt={props.imgalt}/></a>
             <div className="card-body">
                 <h5 className="card-title">{props.h5}</h5>
                 <p className="card-text">{props.p1}</p>
@@ -15,4 +15,4 @@ const NJCoaching = (props) => {
     );
 };
 
-export default NJCoaching;
+export default MovieGuessingGame;

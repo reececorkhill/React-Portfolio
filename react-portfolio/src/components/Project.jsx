@@ -22,6 +22,7 @@ const Button = (props) => {
 }
 
 const Project = (props) => {
+    console.log(props.slug)
     return (
     <div className="col-sm-12 col-md-12 col-lg-12 col-xl-12">
         <div className="card mb-3" id="work-card">

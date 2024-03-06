@@ -1,17 +1,17 @@
 [
     {
         "id": 1,
-        "imgsource": "https://github.com/reececorkhill/Teamtree/blob/main/assets/screenshot.PNG",
+        "imgsource": "https://raw.githubusercontent.com/reececorkhill/Teamtree/main/assets/screenshot.PNG",
         "imgalt": "Engineering team cards on a webpage.",
         "h5": "TeamTree",
         "p1": "Teamtree is a Node.js command-line application designed to take user input and generate a html file showing the team members.",
         "tag": "Node.js",
         "repo": "https://github.com/reececorkhill/Teamtree",
-        "slug": "/Projects/"
+        "slug": "/Projects/TeamTree"
     },
     {
         "id": 2,
-        "imgsource": "https://github.com/reececorkhill/Guess-The-Movie/blob/main/assets/images/Guess-The-Movie-Start.PNG",
+        "imgsource": "https://raw.githubusercontent.com/reececorkhill/Guess-The-Movie/main/assets/images/Guess-The-Movie-Start.PNG",
         "imgalt": "Guess the movie start screen.",
         "h5": "Movie Guessing Game",
         "p1": "Guess The Movie is an interactive JavaScript application in which the user must guess the movie based on clues.",
@@ -21,7 +21,7 @@
     },
     {
         "id": 3,
-        "imgsource": "https://github.com/reececorkhill/Travelerrr-JS/blob/main/assets/images/travelerrr-js.PNG",
+        "imgsource": "https://raw.githubusercontent.com/reececorkhill/Travelerrr-JS/main/assets/images/travelerrr-js.PNG",
         "imgalt": "Weather dashboard showing weather forecast for Madrid.",
         "h5": "Travelerrr",
         "p1": "Travelerrr is a JavaScript application which allows you to check the weather of a city on your travels.",
@@ -31,7 +31,7 @@
     },
     {
         "id": 4,
-        "imgsource": "https://github.com/reececorkhill/Plan-IT/blob/main/assets/images/PlanIT-Screenshot.png",
+        "imgsource": "https://raw.githubusercontent.com/reececorkhill/Plan-IT/main/assets/images/PlanIT-Screenshot.png",
         "imgalt": "Dashboard with 1 hour time blocks from 9am to 5pm.",
         "h5": "PlanIT",
         "p1": "PlanIT is a JavaScript application which allows the user to plan their working day with ease.",
@@ -41,7 +41,7 @@
     },
     {
         "id": 5,
-        "imgsource": "https://github.com/reececorkhill/Quizzy-JS/blob/main/assets/images/StartingPage.png",
+        "imgsource": "https://raw.githubusercontent.com/reececorkhill/Quizzy-JS/main/assets/images/StartingPage.png",
         "imgalt": "Coding quiz challenge start screen.",
         "h5": "QuizzyJS",
         "p1": "QuizzyJS is a JavaScript application which tests the users knowledge of JavaScript.",
@@ -51,7 +51,7 @@
     },
     {
         "id": 6,
-        "imgsource": "https://github.com/reececorkhill/RandoPass-Gen/blob/main/images/RandoPass-Gen.PNG.png",
+        "imgsource": "https://raw.githubusercontent.com/reececorkhill/RandoPass-Gen/main/images/RandoPass-Gen.PNG.png",
         "imgalt": "Password generator page with an example password in the generation box.",
         "h5": "RandoPass Gen",
         "p1": "RandoPass is a random password generator made with JavaScript.",
