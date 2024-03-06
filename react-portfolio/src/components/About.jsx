@@ -1,23 +1,26 @@
 import React from 'react';
+import aboutData from '../../data/about.json'
 
-const About = (props) => {
+const About = () => {
     return (
     <div className="col-sm-6 col-md-6 col-lg-6 col-xl-6">
-        <div className="card mb-3" id="about-card">
-        <img src={props.imgsource} className="card-img-top" alt={props.imgalt}/>
-            <div className="card-body">
-                <h1>{props.h1}</h1>
-                <p className="card-text card-text-left">
-                {props.p1}
-                </p>
-                <p className="card-text card-text-left">
-                {props.p2}
-                </p>
-                <p className="card-text card-text-left">
-                {props.p3}
-                </p>
-            </div>
-        </div>
+        {aboutData.map((data) => (
+           <div className="card mb-3" id="about-card" key={"About"}>
+           <img src={data.imgsource} className="card-img-top" alt={data.imgalt}/>
+               <div className="card-body">
+                   <h1>{data.h1}</h1>
+                   <p className="card-text card-text-left">
+                   {data.p1}
+                   </p>
+                   <p className="card-text card-text-left">
+                   {data.p2}
+                   </p>
+                   <p className="card-text card-text-left">
+                   {data.p3}
+                   </p>
+               </div>
+           </div> 
+        ))}
     </div>
     );
 };
