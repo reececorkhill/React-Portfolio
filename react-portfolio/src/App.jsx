@@ -8,7 +8,7 @@ import Contact from './components/Contact.jsx'
 import projectData from '../data/projects.json'
 import homeData from '../data/home.json'
 import aboutData from '../data/about.json'
-import NJCoaching from './components/Projects/NJCoaching.jsx';
+import TeamTree from './components/Projects/TeamTree.jsx';
 
 function App() {
   return (
@@ -38,7 +38,7 @@ function App() {
         ))}
         <Route path="/Projects" element={<ProjectGallery />} key={"Projects"}/>
         {projectData.map((data) => (
-          <Route path="/Projects/NJ-Coaching" element={<NJCoaching 
+          <Route path="/Projects/TeamTree" element={<TeamTree 
           id={data.id}
           imgsource={data.imgsource}
           imgalt={data.imgalt}
@@ -46,7 +46,7 @@ function App() {
           p1={data.p1}
           p2={data.p2}
           p3={data.p3}
-          />} key={"NJ-Coaching"} />
+          />} key={"TeamTree"} />
         ))}
         <Route path="/Resume" element={<Resume />} />
         <Route path="/Contact" element={<Contact />} />
