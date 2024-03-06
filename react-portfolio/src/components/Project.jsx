@@ -1,18 +1,15 @@
 import React from 'react';
-import projectData from '../../data/projects.json';
 
 const handleClick = () => {
     const buttons = document.querySelectorAll('button')
 
-    buttons.forEach(function (button) {
-        console.log(button)
-        console.log(button.id)
-        if (button.id === "button-1") {
-            console.log("This one matches!")
-        } else {
-            console.log("Not this one!")
-        }
-    })
+    // buttons.forEach(function (button) {
+    //     if (button.id === "button-1") {
+    //         console.log("This one matches!")
+    //     } else {
+    //         console.log("Not this one!")
+    //     }
+    // })
 }
 
 const Button = (props) => {
@@ -22,7 +19,6 @@ const Button = (props) => {
 }
 
 const Project = (props) => {
-    console.log(props.slug)
     return (
     <div className="col-sm-12 col-md-12 col-lg-12 col-xl-12">
         <div className="card mb-3" id="work-card">
