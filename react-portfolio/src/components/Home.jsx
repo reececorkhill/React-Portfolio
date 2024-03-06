@@ -1,17 +1,20 @@
 import React from 'react';
+import homeData from '../../data/home.json'
 
-const Home = (props) => {
+const Home = () => {
     return (
-    <div className="row jumbotron-row">
-        <div className="jumbotron">
-            <img src={props.imgsource} className="rounded" alt={props.imgalt} id="jumbotron-image"/>
-            <h1 className="display-4 pt-4 pb-2">{props.h1}</h1>
-            <h2 className="display-7 pt-4 pb-2">{props.h2}</h2>
+    <div className="row work-row pt-5 pb-5">
+        {homeData.map((data) => (
+            <div className="jumbotron" key={"Home"}>
+            <img src={data.imgsource} className="rounded" alt={data.imgalt} id="jumbotron-image"/>
+            <h1 className="display-4 pt-4 pb-2">{data.h1}</h1>
+            <h2 className="display-7 pt-4 pb-2">{data.h2}</h2>
             <p className="lead">
-                {props.p}
+                {data.p}
             </p>
             <a className="btn btn-primary btn-lg" href="#contact-me" role="button">Contact Me</a>
         </div>
+        ))}
     </div>
     );
 };

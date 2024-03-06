@@ -6,7 +6,6 @@ import ProjectGallery from './components/ProjectGallery.jsx';
 import Resume from './components/Resume.jsx'
 import Contact from './components/Contact.jsx'
 import projectData from '../data/projects.json'
-import homeData from '../data/home.json'
 import aboutData from '../data/about.json'
 import TeamTree from './components/Projects/TeamTree.jsx';
 
@@ -15,16 +14,7 @@ function App() {
     <Router>
       <Header />
       <Routes>
-        {homeData.map((data) => (
-          <Route path="/*" element={<Home 
-          id={data.id}
-          imgsource={data.imgsource}
-          imgalt={data.imgalt}
-          h1={data.h1}
-          h2={data.h2}
-          p={data.p}
-          />} key={"Home"} />
-        ))}
+        <Route path="/*" element={<Home />} />
         {aboutData.map((data) => (
           <Route path="/About" element={<About 
           id={data.id}
