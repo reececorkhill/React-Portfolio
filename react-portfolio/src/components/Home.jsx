@@ -12,7 +12,7 @@ const Home = () => {
             <p className="lead">
                 {data.p}
             </p>
-            <a className="btn btn-primary btn-lg" href="/About" role="button">About Me</a>
+            <a className="btn btn-outline-light btn-lg" href="/About" role="button">About Me</a>
         </div>
         ))}
     </div>
