@@ -3,7 +3,7 @@ import aboutData from '../../data/about.json'
 
 const About = () => {
     return (
-    <div className="col-sm-6 col-md-6 col-lg-6 col-xl-6">
+        <div className="row about-row pt-5 pb-5">
         {aboutData.map((data) => (
            <div id="about-card" key={"About"}>
            <img src={data.imgsource} className="card-img-top" alt={data.imgalt}/>
