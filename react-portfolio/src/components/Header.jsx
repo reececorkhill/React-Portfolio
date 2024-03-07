@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 const Header = (props) => {
     return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary">
+    <nav className="navbar navbar-expand-lg navbar-dark shadow-5-strong">
         <div className="container-fluid">
             <div className="collapse navbar-collapse p-3" id="navbarNav">
                 <ul className="navbar-nav">
