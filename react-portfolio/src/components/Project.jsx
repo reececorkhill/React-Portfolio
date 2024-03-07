@@ -1,37 +1,27 @@
 import React from 'react';
+import projectData from '../../data/projects.json';
 
-const handleClick = () => {
-    const buttons = document.querySelectorAll('button')
-
-    // buttons.forEach(function (button) {
-    //     if (button.id === "button-1") {
-    //         console.log("This one matches!")
-    //     } else {
-    //         console.log("Not this one!")
-    //     }
-    // })
-}
-
-const Button = (props) => {
+const Project = () => {
     return (
-    <button id={props.id} onClick={handleClick}>View Project</button>
-    );
-}
-
-const Project = (props) => {
-    return (
-    <div className="col-sm-12 col-md-12 col-lg-12 col-xl-12">
-        <div className="card mb-3" id="work-card">
-            <a href=""><img src="" className="card-img-top" alt={props.imgalt}/></a>
-            <div className="card-body">
-                <h5 className="card-title">{props.h5}</h5>
-                <p className="card-text">{props.p1}</p>
-                <a href={props.slug}>
-                    <Button id={"button-" + props.id}/>
-                </a>
-                <p className="card-text"><small className="text-muted">{props.tag}</small></p>
-            </div>
-        </div>
+    <div className="col-sm-12 col-md-6 col-lg-3 col-xl-3">
+        {projectData.map((data) => (
+            <div className="card mb-3" key={data.id}>
+                <img src={data.imgsource} className="card-img-top" alt={data.imgalt}/>
+                <div className="card-body">
+                    <h1>{data.h5}</h1>
+                    <p className="card-text card-text-left">
+                    {data.p1}
+                    </p>
+                    <a href={data.repo}>
+                        <button>View Demo</button>
+                    </a>
+                    <a href={data.repo}>
+                        <button>View Repo</button>
+                    </a>
+                    <p className="card-text"><small className="text-muted">{data.tag}</small></p>
+                </div>
+            </div> 
+        ))}
     </div>
     );
 };
