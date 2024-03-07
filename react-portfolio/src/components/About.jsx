@@ -18,8 +18,8 @@ const About = () => {
                    <p className="card-text card-text-left">
                    {data.p3}
                    </p>
-                   <a className="btn btn-primary btn-lg" href="/Projects" role="button">View Projects</a>
-                   <a className="btn btn-primary btn-lg" href="/Resume" role="button">View Resume</a>
+                   <a className="btn btn-outline-light btn-lg" href="/Projects" role="button">View Projects</a>
+                   <a className="btn btn-outline-light btn-lg" href="/Resume" role="button">View Resume</a>
                </div>
            </div> 
         ))}
