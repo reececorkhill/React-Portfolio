@@ -13,10 +13,10 @@ const Project = () => {
                     {data.p1}
                     </p>
                     <a href={data.repo}>
-                        <button>View Demo</button>
-                    </a>
-                    <a href={data.repo}>
                         <button>View Repo</button>
+                    </a>
+                    <a href={data.demo}>
+                        <button>View Demo</button>
                     </a>
                     <p className="card-text"><small className="text-muted">{data.tag}</small></p>
                 </div>
