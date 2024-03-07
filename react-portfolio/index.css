@@ -83,3 +83,17 @@ body {
 .btn:hover {
     box-shadow: 0px 0px 25px #FFFFFF;
 }
+
+#about-card {
+	display: flex;
+    flex-direction: column;
+	padding-top: 200px;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+}
+
+.about-row {
+	margin-left: 350px !important;
+	margin-right: 350px !important;
+}
