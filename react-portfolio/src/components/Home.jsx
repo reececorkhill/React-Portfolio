@@ -5,7 +5,7 @@ const Home = () => {
     return (
     <div className="row work-row pt-5 pb-5">
         {homeData.map((data) => (
-            <div className="jumbotron" key={"Home"}>
+            <div className="jumbotron" id="home-page-component" key={"Home"}>
             <img src={data.imgsource} className="rounded" alt={data.imgalt} id="jumbotron-image"/>
             <h1 className="display-4 pt-4 pb-2">{data.h1}</h1>
             <h2 className="display-7 pt-4 pb-2">{data.h2}</h2>
