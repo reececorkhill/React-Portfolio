@@ -51,19 +51,6 @@ body {
 	overflow-x: hidden;
 }
 
-/* Credit: Manuel Pinto // https://codepen.io/P1N2O/pen/pyBNzX */
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
-
 .jumbotron {
 	display: flex;
     flex-direction: column;
@@ -103,4 +90,50 @@ body {
 	flex-direction: row;
 	padding-top: 15px;
 	gap: 25px;
+}
+
+.project-cards-div {
+	display: flex;
+	justify-content: space-evenly;
+	padding: 25px;
+}
+
+.card {
+	color: var(--primary-font-color) !important;
+	box-shadow: 0 0 5px 0 !important; 
+    background: inherit !important; 
+    backdrop-filter: blur(10px);
+	width: 550px;
+}
+
+.card-body{
+	height: 215px;
+	width: fit;
+}
+.card-img-top {
+	height: 250px;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 25px #FFFFFF !important;
+}
+
+.project-card-buttons {
+	display: flex;
+	flex-direction: row;
+	padding-top: 15px;
+	gap: 25px;
+}
+
+/* Credit: Manuel Pinto // https://codepen.io/P1N2O/pen/pyBNzX */
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
