@@ -14,8 +14,10 @@ const About = () => {
                 <p className="lead">
                     {data.p2}
                 </p>
-                <a className="btn btn-outline-light btn-lg" href="/Projects" role="button">View Projects</a>
-                <a className="btn btn-outline-light btn-lg" href="/Resume" role="button">View Resume</a>
+                <div className="about-buttons">
+                    <a className="btn btn-outline-light btn-lg" href="/Projects" role="button">View Projects</a>
+                    <a className="btn btn-outline-light btn-lg" href="/Resume" role="button">View Resume</a>
+                </div>
             </div>
         ))}
     </div>
