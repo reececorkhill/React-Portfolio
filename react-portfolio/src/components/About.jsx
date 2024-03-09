@@ -5,23 +5,18 @@ const About = () => {
     return (
         <div className="row about-row pt-5 pb-5">
         {aboutData.map((data) => (
-           <div id="about-card" key={"About"}>
-           <img src={data.imgsource} className="card-img-top" alt={data.imgalt}/>
-               <div className="card-body">
-                   <h1>{data.h1}</h1>
-                   <p className="card-text card-text-left">
-                   {data.p1}
-                   </p>
-                   <p className="card-text card-text-left">
-                   {data.p2}
-                   </p>
-                   <p className="card-text card-text-left">
-                   {data.p3}
-                   </p>
-                   <a className="btn btn-outline-light btn-lg" href="/Projects" role="button">View Projects</a>
-                   <a className="btn btn-outline-light btn-lg" href="/Resume" role="button">View Resume</a>
-               </div>
-           </div> 
+           <div className="jumbotron" id="about-page-component" key={"About"}>
+                <h1 className="display-4 pt-4 pb-2">{data.h1}</h1>
+                <h2 className="display-7 pt-4 pb-2">{data.h2}</h2>
+                <p className="lead">
+                    {data.p1}
+                </p>
+                <p className="lead">
+                    {data.p2}
+                </p>
+                <a className="btn btn-outline-light btn-lg" href="/Projects" role="button">View Projects</a>
+                <a className="btn btn-outline-light btn-lg" href="/Resume" role="button">View Resume</a>
+            </div>
         ))}
     </div>
     );
