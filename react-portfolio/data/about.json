@@ -1,11 +1,8 @@
 [
     {
         "id": 1,
-        "imgsource": "",
-        "imgalt": "Reece Corkhill",
         "h1": "About Me",
-        "p1": "I'm Reece and I'm an aspiring fullstack web developer based in the UK. I've always had a keen interest in technology and loved the idea of being able to understand how things worked.",
-        "p2": "Through lockdown I had the idea of starting my own business where I would take a smart approach to web design, using WordPress. Through the early stages of this venture, I started learning the in's and out's of content management systems and web servers and went on to build up my skills using Linux and a custom hosting panel.",
-        "p3": "Wanting to further my career, I joined the edX Front-end Web Development bootcamp in November 2023 with the aim of building on my skills and being able to leave my full time job and focus more on my business, and changing my offering to provide more bespoke web applications."
+        "p1": "As the Director of Smart IT Web Development Limited, I'm dedicated to delivering cutting-edge web solutions tailored to meet our clients' diverse needs. With a focus on innovation and client satisfaction, I oversee the strategic direction, operations, and business development initiatives of the company.",
+        "p2": "Smart IT Web Development is a forward-thinking company committed to delivering bespoke web solutions. We combine technical expertise with creative flair to build websites and applications that not only meet but exceed our clients' expectations. We thrive on challenges, consistently pushing the boundaries to deliver innovative solutions in a rapidly evolving digital landscape."
     }
 ]
