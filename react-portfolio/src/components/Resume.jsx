@@ -1,21 +1,24 @@
 import React from 'react';
+import resumeData from '../../data/resume.json';
 
 const Resume = () => {
     return (
-    <div className="row work-row pt-5 pb-5">
-        <div className="col-sm-12 col-md-12 col-lg-12 col-xl-12">
-            <div className="card mb-3" id="work-card">
-                <a href=""><img src="" className="card-img-top" alt="Project Image"/></a>
-                <div className="card-body">
-                    <h5 className="card-title">NJ Coaching Website</h5>
-                    <p className="card-text">A client website built using WordPress and Elementor.
-                    Fully responsive design that includes Image Galleries, a Contact Form,
-                    Google Analytics and a Google Maps Integration.
-                    </p>
-                    <p className="card-text"><small className="text-muted">WordPress</small></p>
+        <div className="row resume-row pt-5 pb-5">
+        {resumeData.map((data) => (
+           <div className="jumbotron" id="resume-page-component" key={"Resume"}>
+                <h1 className="display-4 pt-4 pb-2">{data.h1}</h1>
+                <p className="lead">
+                    {data.p1}
+                </p>
+                <p className="lead">
+                    {data.p2}
+                </p>
+                <div className="about-buttons">
+                    <a className="btn btn-outline-light btn-lg" href="" role="button">Download</a>
+                    <a className="btn btn-outline-light btn-lg" href="/Contact" role="button">Contact Me</a>
                 </div>
             </div>
-        </div>
+        ))}
     </div>
     );
 };
