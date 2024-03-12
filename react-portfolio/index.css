@@ -68,6 +68,7 @@ body {
 }
 
 .btn:hover {
+	color: #000000;
     box-shadow: 0px 0px 25px #FFFFFF;
 }
 
@@ -123,6 +124,23 @@ body {
 	flex-direction: row;
 	padding-top: 15px;
 	gap: 25px;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 185px;
+}
+
+.form-group {
+	width: 500px;
+	padding: 5px;
+}
+
+#form-submit-button {
+	margin-top: 10px;
 }
 
 /* Credit: Manuel Pinto // https://codepen.io/P1N2O/pen/pyBNzX */
