@@ -5,6 +5,7 @@ import About from './components/About.jsx';
 import ProjectGallery from './components/ProjectGallery.jsx';
 import Resume from './components/Resume.jsx';
 import Contact from './components/Contact.jsx';
+import "../index.css";
 
 function App() {
   return (
