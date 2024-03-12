@@ -14,7 +14,7 @@ const Resume = () => {
                     {data.p2}
                 </p>
                 <div className="about-buttons">
-                    <a className="btn btn-outline-light btn-lg" href="" role="button">Download</a>
+                    <a className="btn btn-outline-light btn-lg" href="/ReeceCorkhillResume.pdf" download="ReeceCorkhillResume.pdf" role="button">Download</a>
                     <a className="btn btn-outline-light btn-lg" href="/Contact" role="button">Contact Me</a>
                 </div>
             </div>
