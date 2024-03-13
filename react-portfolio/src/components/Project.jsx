@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import projectData from '../../data/projects.json';
 
 const Project = () => {
@@ -14,10 +15,13 @@ const Project = () => {
                             {data.p1}
                             </p>
                             <div className="project-card-buttons">
-                                <a className="btn btn-outline-light btn-md" href={data.repo} role="button">View Repo</a>
-                                <a className="btn btn-outline-light btn-md" href={data.demo} role="button">View Demo</a>
+                                <Link to={`/Projects/${data.id}`}>
+                                    <a className="btn btn-outline-light btn-md" role="button">Read More...</a>
+                                </Link>
+                                <a className="btn btn-outline-light btn-md" href={data.repo} role="button">GitHub</a>
+                                <a className="btn btn-outline-light btn-md" href={data.demo} role="button">Demo</a>
                             </div>
-                            <p className="card-text"><small className="text-muted">{data.tag}</small></p>
+                            <p className="card-text"><small>{data.tag}</small></p>
                         </div>
                     </div> 
                 </div>
