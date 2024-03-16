@@ -143,6 +143,21 @@ form {
 	margin-top: 10px;
 }
 
+.contact-info {
+	display: flex;
+	flex-direction: row;
+	padding-top: 15px;
+	gap: 25px;
+}
+
+#form-contact-button {
+	margin-top: 10px;
+}
+
+#form-social-button {
+	margin-top: 10px;
+}
+
 /* Credit: Manuel Pinto // https://codepen.io/P1N2O/pen/pyBNzX */
 @keyframes gradient {
 	0% {
