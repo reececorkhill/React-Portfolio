@@ -19,6 +19,12 @@ const Contact = () => {
                   <textarea className="form-control" id="FormControlTextarea1" rows="3" placeholder="Your Message"></textarea>
                 </div>
                 <button type="submit" className="btn btn-outline-light btn-lg" id="form-submit-button">Submit</button>
+                <div className="contact-info">
+                  <a className="btn btn-outline-light btn-lg" href="mailto:reece@smartit-webdevelopment.com" role="button" id="form-contact-button">Email</a>
+                  <a className="btn btn-outline-light btn-lg" href="tel:+447749710226" role="button" id="form-contact-button">Phone</a>
+                  <a className="btn btn-outline-light btn-lg" href="https://www.linkedin.com/in/reece-corkhill/" role="button" id="form-social-button">LinkedIn</a>
+                  <a className="btn btn-outline-light btn-lg" href="https://github.com/reececorkhill/" role="button" id="form-social-button">GitHub</a>
+                </div>
           </form>
       </div>
     </div> 
