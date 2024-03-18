@@ -1,4 +1,3 @@
-import { HashRouter as Router, Route, Routes, HashRouter } from 'react-router-dom';
 import Header from './components/Header.jsx';
 import Home from './components/Home.jsx';
 import About from './components/About.jsx';
@@ -10,19 +9,17 @@ import "../index.css";
 
 function App() {
   return (
-    <HashRouter>
-      <Router>
-        <Header />
-        <Routes>
-          <Route path="/*" element={<Home />} />
-          <Route path="/About" element={<About />} />
-          <Route path="/Projects" element={<ProjectGallery />} />
-          <Route path="/Projects/:id" element={<ViewProject />} />
-          <Route path="/Resume" element={<Resume />} />
-          <Route path="/Contact" element={<Contact />} />
-        </Routes>
-      </Router>
-    </HashRouter>
+    <Router>
+      <Header />
+      <Routes>
+        <Route path="/*" element={<Home />} />
+        <Route path="/About" element={<About />} />
+        <Route path="/Projects" element={<ProjectGallery />} />
+        <Route path="/Projects/:id" element={<ViewProject />} />
+        <Route path="/Resume" element={<Resume />} />
+        <Route path="/Contact" element={<Contact />} />
+      </Routes>
+    </Router>
   );
 }
 
