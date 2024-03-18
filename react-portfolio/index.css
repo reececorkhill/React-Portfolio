@@ -32,8 +32,16 @@
 }
 
 /* Aligns the content inside the #navbarNav to the center */
-#navbarNav {
+#navbarNavDropdown {
     justify-content: center;
+}
+
+.container-fluid {
+	display: flex;
+	flex-direction: column;
+	justify-content: center !important;
+	align-items: center !important;
+	margin-top: 15px;
 }
 
 /* Adds a gap between items in the navbar */
@@ -81,11 +89,6 @@ body {
 	justify-content: center;
 }
 
-.about-row {
-	margin-left: 350px !important;
-	margin-right: 350px !important;
-}
-
 .about-buttons {
 	display: flex;
 	flex-direction: row;
@@ -107,10 +110,28 @@ body {
 	width: 550px;
 }
 
-.card-body{
-	height: 215px;
-	width: fit;
+.single-project-div {
+	display: flex !important;
+	flex-direction: row !important;
+	justify-content: center !important;
 }
+
+.single-project-card {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.single-card-body {
+	height: auto !important;
+}
+
+.single-card-buttons {
+	display: flex;
+	flex-direction: row;
+	gap: 25px;
+}
+
 .card-img-top {
 	height: 250px;
 }
