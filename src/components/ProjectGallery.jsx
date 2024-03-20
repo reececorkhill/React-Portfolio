@@ -5,7 +5,7 @@ import projectData from '../../data/projects.json';
 const ProjectGallery = () => {
     return (
     <>
-        <div className="row project-row pt-5 pb-5">
+        <div className="row project-row pt-5 pb-5 m-4">
             {projectData.map((data) => (
                 <Project
                 key={data.id} 
